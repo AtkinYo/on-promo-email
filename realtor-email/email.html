@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <style>
+    body {
+    margin: 0;
+    background-color: #cccccc;
+    font-family: 'Inter', sans-serif;
+	}
+
+	table {
+		border-spacing: 0;
+	}
+	td {
+		padding: 0;
+	}
+	img {
+		border: 0;
+	}
+
+	.wrapper{
+		width: 100%;
+		table-layout: fixed;
+		background-color: #cccccc;
+		padding-bottom: 60px;
+	}
+
+	.main{
+		background-color: #fff;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 600px;
+		border-spacing: 0;
+		color: #171A1B;
+	}
+
+    /* Navbar */
+    .row{
+        border: #171A1B 2px solid;
+    }
+
+    .container .content .nav-logo{
+        width: 30px;
+    }
+
+    .navbar.padding{
+        padding: 20px 0;
+    }
+
+
+    /* CTA Table */
+    .main.cta{
+        font-size: 0;
+    }
+
+    .main .cta-content{
+        font-size: 15px;
+        width: 80%;
+        margin: 0 auto;
+    }
+/* 
+    .cta-content .cta-btn a{
+        text-decoration: none;
+        color: #171A1B;
+    }
+    .cta-content .cta-btn {
+        padding: 32px 0;
+    }
+    .cta-content .cta-btn .btn {
+        border: #171A1B 1px solid;
+        padding: 12px 32px;
+        border-radius: 4px;
+        margin: 20px;
+        font-size: 12px;
+        text-transform: uppercase;
+    } */
+
+    .cta.padding{
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    /* two Column Product Table */
+	.two-columns{
+		text-align: center;
+		font-size: 0;
+	}
+
+	.two-columns .column{
+		width: 100%;
+		max-width: 300px;
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+		padding: 28px;
+
+	}
+
+    .cta-content-btn{
+        display: inline-block;
+        width: 100%;
+        max-width: 296px;
+        padding: 20px 0;
+    }
+
+    .cta-btn-container{
+        max-width: 300px;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .cta-btn{
+        border: #171A1B 1px solid;
+        padding: 12px 0;
+        width: 140px;
+    }
+
+    .cta-btn a{
+        text-decoration: none;
+        font-size: 0;
+        font-weight: 600;
+        color: #171A1B;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+    }
+
+    /* Warranty Table */
+    .main.warranty{
+        font-size: 0;
+    }
+
+    .main .warranty-content{
+        font-size: 15px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .warranty.padding{
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    /* Warranty Button */
+    .warranty-content .warranty-btn {
+        padding: 32px 0;
+    }
+
+    .warranty-content .warranty-btn a{
+        text-decoration: none;
+        color: #171A1B;
+    }
+    .warranty-content .btn {
+        border: #171A1B 1px solid;
+        padding: 12px 32px;
+        border-radius: 4px;
+        margin: 20px;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    /* Colors Buttons */
+    .colors-content .colors-btn {
+        padding: 32px 0;
+    }
+
+    .colors-content .colors-btn a{
+        text-decoration: none;
+        color: #171A1B;
+    }
+    .colors-content .btn {
+        border: #171A1B 1px solid;
+        padding: 12px 32px;
+        border-radius: 4px;
+        margin: 20px;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    /* Exchange Table */
+    .exchange-row{
+        width: 90%;
+        padding: 25px 0;
+    }
+
+    .exchange-content{
+        text-align: center;
+        border-top: #171A1B 1px solid;
+        border-bottom: #171A1B 1px solid;
+        background-color: #fff;
+        width: 300px;
+    }
+
+    .exchange-content p{
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    @media screen and (max-width:525px){
+
+        .cta-content .cta-btn .btn {
+        border: #171A1B 1px solid;
+        padding: 12px 12px;
+        border-radius: 4px;
+        margin: 0px;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+        .cta-content .cta-text h2 {
+        font-size: 24px !important;
+    }
+
+    }
+    </style>
+</head>
+<body>
+    <center class="wrapper">
+        <table class="main" width="100%" border="0" cellspacing="0" cellpadding="0">
+
+            <!-- Navbar Table -->
+            <tr>
+                <td class="main navbar padding" align="center" style="background-color: #ffffff;">
+                    <table class="container">
+                        <tr>
+                            <td align="center">
+                                <!-- Start Nav Logo -->
+                                <table class="content">
+                                    <tr>
+                                        <td class="nav-logo">
+                                            <a href="#"><img src="https://i.ibb.co/6FH6Fyk/logo.png" width="20"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- End Nav Logo -->
+
+                                <!-- Start Nav Options -->
+                                <table class="content">
+                                    <tr>
+                                        <td>
+                                          <a href="#" style="font-weight: 700;padding-top: 10px; text-decoration: none;color: #171A1B;">
+                                            <p style="font-size: 12px;font-weight: 700;padding-top: 10px; text-transform: uppercase;letter-spacing: 1px;">Shoes</p>
+                                          </a>  
+                                        </td>
+                                        <td>
+                                          <a href="#" style="font-weight: 700;padding-top: 10px; text-decoration: none;color: #171A1B;">
+                                            <p style="padding: 0 60px;font-size: 12px;font-weight: 700;padding-top: 10px; text-transform: uppercase;letter-spacing: 1px;">Apparel</p>
+                                          </a>  
+                                        </td>
+                                        <td>
+                                          <a href="#" style="font-weight: 700;padding-top: 10px; text-decoration: none;color: #171A1B;">
+                                            <p style="font-size: 12px;font-weight: 700;padding-top: 10px; text-transform: uppercase;letter-spacing: 1px;">Stories</p>
+                                          </a>  
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- End Nav Options -->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- End Navbar Table -->
+
+
+            <!-- Hero Table -->
+            <tr>
+                <td>
+                    <img src="https://i.ibb.co/5k23RP8/hero-banner.jpg" width="600" style="max-width: 100%;">
+                </td>
+            </tr>
+            <!-- End Hero Table -->
+
+
+            <!-- Start CTA Table -->
+            <tr>
+                <td class="main cta padding" style="background-color: #ffffff;">
+                    <table class="cta-content">
+                        <!-- CTA Text -->
+                        <tr>
+                            <td class="cta-text">
+                                <h2 style="font-size: 26px;font-weight: 500;letter-spacing: 1.5;">Seasonal style. Statement color.</h2>
+
+                                <p style="font-size: 17px;font-weight: 500;letter-spacing: 1.5;line-height: 30px;color: #afafaf;">Bright shades and contrasting block colors put a vibrant spin on our iconic Cloud. These limited shades aren't coming back so get them before they're gone for good.</p>
+                            </td>
+                        </tr>
+
+                        <!-- CTA Btn -->
+                        <!-- <tr>
+                            <td class="cta-btn">
+                                <a href="#" class="btn">Shop Mens</a>
+                                <a href="#" class="btn">Shop Womens</a>
+                            </td>
+                        </tr> -->
+                    </table>
+
+                    <table width="100%" class="containers">
+                        <tr>
+                            <td class="padding cta-btn-container" style="font-size: 16px;" align="center">
+                                <table class="cta-content-btn">
+                                    <tr>
+                                        <td class="cta-btn">
+                                            <a href="#" style="font-size: 14px;">Shop Mens</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="cta-content-btn">
+                                    <tr>
+                                        <td class="cta-btn">
+                                            <a href="#" style="font-size: 14px;">Shop Womens</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- End CTA Table -->
+
+
+            <!-- Start Product two Column Table  -->
+            <tr>
+                <td style="background-color: #ffffff;">
+                    <table width="100%">
+                        <tr>
+                            <!-- Start two Columns -->
+                            <td class="two-columns">
+                                
+                                <!-- Column 1 -->
+
+                                <!-- Column IMG -->
+                                <table class="column" class="content" >
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content" >
+                                                <tr>
+                                                    <td style="width: 300px;">
+                                                        <a href="#"><img src="https://i.ibb.co/sFCgz0R/product-1.jpg" width="250" style="max-width: 260px;border-radius: 4px;"></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <!-- Column Text -->
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content" >
+                                                <tr>
+                                                    <td style="width: 300px;">
+                                                        <h3 style="font-size: 26px;font-weight: 500;letter-spacing: 1.5;">Lace up. Lets go.</h3>
+                                                        <p style="font-size: 17px;font-weight: 500;letter-spacing: 1.5;line-height: 30px;color: #afafaf;">Waste no time - step into fast slip-on design and seal the deal with speed laces. Prefer classic laces? There's a pair of those in the box too.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <!-- Column 2 -->
+
+                                <!-- Column IMG -->
+                                <table class="column" class="content" >
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content" >
+                                                <tr>
+                                                    <td style="width: 300px;">
+                                                        <a href="#"><img src="https://i.ibb.co/TKts8JH/product-2.jpg" width="250" style="max-width: 260px;border-radius: 4px;"></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <!-- Column Text -->
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content" >
+                                                <tr>
+                                                    <td style="width: 300px;">
+                                                        <h3 style="font-size: 26px;font-weight: 500;letter-spacing: 1.5;">Everyday on clouds.</h3>
+                                                        <p style="font-size: 17px;font-weight: 500;letter-spacing: 1.5;line-height: 30px;color: #afafaf;">Our revolutionary CloudTec sole offers maximum cushioning at minimum weight. This is elite-level performance technology for your everyday.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <!-- Column 3 -->
+
+                                <!-- Column IMG -->
+                                <table class="column" class="content" >
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content" >
+                                                <tr>
+                                                    <td style="width: 300px;">
+                                                        <a href="#"><img src="https://i.ibb.co/W09Hn8B/product-3.jpg" width="250" style="max-width: 260px;border-radius: 4px;"></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <!-- Column Text -->
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content" >
+                                                <tr>
+                                                    <td style="width: 300px;">
+                                                        <h3 style="font-size: 24px;font-weight: 500;letter-spacing: 1.5;">Look fresh and feel it.</h3>
+                                                        <p style="font-size: 17px;font-weight: 500;letter-spacing: 1.5;line-height: 30px;color: #afafaf;">Breathable mesh upper and antimicrobial lining works hard to keep your temperature regulated all day.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Warranty Table -->
+            <tr>
+                <td class="main warranty padding">
+                    <table class="warranty-content">
+                        <!-- Warranty Text -->
+                        <tr>
+                            <td class="warranty-text content">
+                                <h2 style="font-size: 26px;font-weight: 500;letter-spacing: 1.5;">Try On the Cloud 70 | 30</h2>
+
+                                <p style="font-size: 17px;font-weight: 500;letter-spacing: 1.5;line-height: 30px;color: #afafaf;">Try On the Cloud 70 | 30 at home for 30 days. Love them? Keep them. Not for you? Send them back for a full refund.</p>
+                            </td>
+
+                            <tr>
+                                <td class="warranty-btn">
+                                <!-- Warranty Button -->
+                                <a href="#" class="btn">30-Day Try On</a>
+                                </td>
+                            </tr>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Colours Table -->
+            <tr>
+                <td>
+                    <table class="colors-content" style="text-align: center;">
+                        <tr>
+                            <td>
+                                <a href="#"><img src="https://i.ibb.co/QfKb0hr/color1.png" width="600" style="max-width: 100%;"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#"><img src="https://i.ibb.co/vvjjb0H/color2.png" width="600" style="max-width: 100%;"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#"><img src="https://i.ibb.co/PtqT5jX/color3.png" width="600" style="max-width: 100%;"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="colors-btn">
+                                <a href="#" class="btn">Shop All Colors</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Exchange Table -->
+            <tr>
+                <td>
+                    <table class="exchange-row" align="center">
+                        <tr>
+                            <td class="exchange-content">
+                                <p>Free Exhange & Returns</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Footer Table -->
+            <tr>
+                <td>
+                    <table align="center" style="padding: 20px 0;text-align: center;" width="100%">
+
+                        <tr>
+                            <td style="text-align: center;">
+                                <a href="#"><img src="https://i.ibb.co/6FH6Fyk/logo.png" width="20" style="padding: 0 0 20px 0;"></a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td style="padding: 20px 0;">
+                                <a href="#"><img src="https://i.ibb.co/9c0Cypc/facebook.png" width="10" style="padding: 0 8px;"></a>
+                                <a href="#"><img src="https://i.ibb.co/0mpDLpr/instagram.png" width="20" style="padding: 0 8px;"></a>
+                                <a href="#"><img src="https://i.ibb.co/6Rr62Ly/strava.png" width="20" style="padding: 0 8px;"></a>
+                                <a href="#"><img src="https://i.ibb.co/7Rs5B8z/youtube.png" width="20" style="padding: 0 8px;"></a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding: 20px 0;">
+                                <a href="#" style="color: #171A1B;text-transform: uppercase;text-decoration: none;font-weight: 600;font-size: 12px;">
+                                    <p>View In Browser</p>
+                                </a>
+                                <a href="#" style="color: #171A1B;text-transform: uppercase;text-decoration: none;font-weight: 600;font-size: 12px;">
+                                    <p>Unsubscribe</p>
+                                </a>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+        </table>
+    </center>
+</body>
+</html>
